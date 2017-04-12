@@ -1,0 +1,16 @@
+NASM_SRC="C:\Program files (x86)\SASM\NASM\nasm.exe"
+
+all: main
+    
+
+main: main.obj prog.obj
+    link main.obj prog.obj /OUT:program.exe
+
+main.obj: main.c
+    cl /c main.c
+
+prog.obj: prog.asm
+    $(NASM_SRC) -f win32 prog.asm -o prog.obj
+
+clean:
+    del *.obj /q
