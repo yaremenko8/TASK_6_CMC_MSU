@@ -1,4 +1,4 @@
-%define EXP_PRECISION 30 ; кол-во членов ряда тэйлора exp(x)
+%define EXP_PRECISION 30 ; ГЄГ®Г«-ГўГ® Г·Г«ГҐГ­Г®Гў Г°ГїГ¤Г  ГІГЅГ©Г«Г®Г°Г  exp(x)
 
 
 section .data
@@ -139,3 +139,6 @@ _f3d: ;((-2/3)(x + 1))' = -2/3
     mov esp, ebp
     pop ebp
     ret
+
+
+; 34В°49'16.0"N 109В°27'55.9"W
